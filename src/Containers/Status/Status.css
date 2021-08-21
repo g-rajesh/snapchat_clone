@@ -1,0 +1,204 @@
+.status {
+     position: relative;
+     background-color: #059ee0;
+}
+
+.status_header {
+     display: flex;
+     align-items: center;
+     height: 50px;
+     width: 100%;
+     padding: 0 10px;
+}
+
+.status_header .avatar {
+     min-width: 25px;
+     height: 25px;
+     border-radius: 50%;
+     cursor: pointer;
+}
+
+.status_header img.avatar {
+     object-fit: cover;
+}
+
+.status_header span.avatar {
+     background-color: #fff;
+     text-align: center;
+     line-height: 25px;
+     font-weight: 500;
+}
+
+.status_header .status_search {
+     display: flex;
+     align-items: center;
+     margin-right: 0.5rem;
+}
+
+.status_header .status_search .searchIcon {
+     color: #fff;
+     margin: 0 0.2rem 0 0.4rem;
+}
+
+.status_header .status_search input {
+     border: 0;
+     outline: 0;
+     background-color: transparent;
+     color: #fff;
+     width: 150px;
+}
+
+.status_header .status_search input::placeholder {
+     color: #fff;
+}
+.status_header .chatIcon {
+     color: #fff;
+     font-size: 1.1rem;
+     cursor: pointer;
+}
+
+.status .posts {
+     background-color: #fff;
+     border-top-left-radius: 12px;
+     border-top-right-radius: 12px;
+     overflow-y: auto;
+     position: relative;
+     height: calc(342px - 50px);
+}
+
+.status .posts::-webkit-scrollbar {
+     display: none;
+}
+
+.status .posts {
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+}
+
+.posts .alertUser {
+     padding: 1rem;
+     font-size: 0.9rem;
+}
+
+.status .posts .captureIcon {
+     position: absolute;
+     bottom: 5%;
+     left: 50%;
+     transform: translateX(-50%);
+     bottom: 2rem;
+     border-radius: 50%;
+     width: 35px;
+     height: 35px;
+     border: 3px solid hsl(0, 0%, 80%);
+     background: transparent;
+     cursor: pointer;
+}
+
+.status .posts .captureIcon:hover {
+     border: 3px solid hsl(0, 0%, 90%);
+}
+
+.post {
+     padding: 0.6rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     cursor: pointer;
+     border-bottom: 1px solid hsl(0, 0%, 95%);
+}
+
+.post:hover {
+     background-color: hsl(0, 0%, 97%);
+}
+
+.post .profilePic {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     margin-right: 0.5rem;
+}
+
+.post span.profilePic {
+     background-color: #059ee0;
+     color: #fff;
+     line-height: 30px;
+     text-align: center;
+     font-size: 1.1rem;
+}
+
+.post img.profilePic {
+     object-fit: cover;
+}
+
+.post .post_info {
+     flex: 1;
+}
+
+.post .post_info h2 {
+     font-size: 0.9rem;
+     margin: 0;
+     font-weight: 600;
+}
+
+.post .post_info p {
+     font-size: 0.7rem;
+     color: hsl(0, 0%, 85%);
+}
+
+.post .post_info p span {
+     margin: 0 0.2rem;
+}
+
+.status_view {
+     cursor: pointer;
+     position: relative;
+     width: 248px;
+     height: 342px;
+     background: #fff;
+}
+
+.status_view img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.status_view .status_timer {
+     position: absolute;
+     right: 0;
+     top: 0;
+     margin: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+     .status_header {
+          height: 70px;
+          padding: 0 1rem;
+     }
+     .status_header .status_search {
+          margin: 0 1rem;
+          flex: 1;
+     }
+     .status_header .status_search .searchIcon {
+          margin-left: 0;
+          margin-right: 0.5rem;
+          font-size: 1.2rem;
+     }
+
+     .status_header .status_search input {
+          width: 100%;
+          font-size: 1rem;
+          padding: 0 0.2rem;
+     }
+     .status .posts {
+          height: calc(100vh - 70px);
+     }
+
+     .status_view {
+          width: 100%;
+          height: 100vh;
+     }
+     .status_view .status_timer {
+          margin: 1.5rem;
+     }
+}

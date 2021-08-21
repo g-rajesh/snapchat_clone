@@ -1,0 +1,54 @@
+.login {
+     margin-top: 5rem;
+}
+
+.login_container {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+}
+
+.login_container .snapchat-logo {
+     font-size: 5rem;
+     color: #fefe00;
+     object-fit: contain;
+     margin-bottom: 2rem;
+}
+
+.login_container button {
+     display: block;
+     width: 90%;
+     margin: auto;
+     background-color: transparent;
+     border: 1px solid #333;
+     padding: 0.3rem 0;
+     border-radius: 3px;
+     cursor: pointer;
+     text-transform: uppercase;
+     color: #333;
+     font-weight: 600;
+}
+
+@media only screen and (max-width: 500px) {
+     .login {
+          margin: 0;
+          width: 100%;
+     }
+
+     .login_container .snapchat-logo {
+          margin-top: 10rem;
+          margin-bottom: -5rem;
+     }
+
+     .login_container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 100vh;
+     }
+
+     .login_container .snapchat-logo {
+          color: #fff;
+     }
+}

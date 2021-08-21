@@ -1,0 +1,31 @@
+.webcamCapture {
+     position: relative;
+     width: 248px;
+     height: 342px;
+     background-color: #fff;
+}
+
+.captureIcon {
+     position: absolute;
+     bottom: 2rem;
+     left: 50%;
+     transform: translateX(-50%);
+     border-radius: 50%;
+     width: 35px;
+     height: 35px;
+     border: 3px solid #fff;
+     background: transparent;
+     cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+     .webcamCapture {
+          position: relative;
+          width: 100%;
+          height: 100vh;
+          background-color: #fff;
+     }
+     .captureIcon{
+          border: 3px solid #000;
+     }
+}
